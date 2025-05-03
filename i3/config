@@ -108,7 +108,7 @@ bindsym Mod1+minus scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "󰀫"
+set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
@@ -184,4 +184,5 @@ for_window [class="^.*"] border pixel 0
 exec polybar
 exec xrandr --output HDMI-0 --off --output DP-0 --off --output DP-1 --off --output DP-2 --mode 1920x1080 --pos 0x0 --rotate right --output DP-3 --off --output DP-4 --mode 1920x1080 --pos 1080x420 --rotate normal --output DP-5 --off
 exec feh --randomize --bg-fill ~/.dotfiles/i3/wallpaper/
+exec autotiling
 exec i3-config-wizard

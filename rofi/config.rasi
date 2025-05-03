@@ -1,0 +1,46 @@
+/*
+colors.primary]
+background = '#212121'
+foreground = '#B0BEC5'
+
+[colors.normal]
+black   = '#000000'
+red     = '#F07178'
+green   = '#C3E88D'
+yellow  = '#FFCB6B'
+blue    = '#82AAFF'
+magenta = '#a36ac7'
+cyan    = '#89DDFF'
+white   = '#EEFFFF'
+
+[colors.bright]
+black   = '#969896'
+red     = '#cc342b'
+green   = '#198844'
+yellow  = '#fba922'
+blue    = '#3971ed'
+magenta = '#a36ac7'
+cyan    = '#3971ed'
+white   = '#ffffff'
+*/
+entry {
+	placeholder: "Search";
+}
+
+window {
+	font: "JetBrains Mono, 12";
+}
+
+element {
+	orientation: horizontal;
+	children: [ element-text ];
+	spacing: 5px;
+}
+
+element-icon {
+	size: 1.5em;
+}
+
+element-text {
+	vertical-align: 0.5;
+}
