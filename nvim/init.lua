@@ -7,7 +7,7 @@ vim.o.termguicolors = true
 local nerdtree = vim.api.nvim_create_augroup("nerdtree", {})
 vim.api.nvim_create_autocmd("VimEnter", {
 	group = augroup,
-	command = "NERDTree | wincmd p",
+	command = "NERDTree",
 })
 
 -- Plugins 

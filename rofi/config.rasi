@@ -1,46 +1,79 @@
-/*
-colors.primary]
-background = '#212121'
-foreground = '#B0BEC5'
+@theme "gruvbox-dark"
 
-[colors.normal]
-black   = '#000000'
-red     = '#F07178'
-green   = '#C3E88D'
-yellow  = '#FFCB6B'
-blue    = '#82AAFF'
-magenta = '#a36ac7'
-cyan    = '#89DDFF'
-white   = '#EEFFFF'
+configuration {
+	drun {
+		display-name: " ";
+	}
+}
 
-[colors.bright]
-black   = '#969896'
-red     = '#cc342b'
-green   = '#198844'
-yellow  = '#fba922'
-blue    = '#3971ed'
-magenta = '#a36ac7'
-cyan    = '#3971ed'
-white   = '#ffffff'
-*/
-entry {
-	placeholder: "Search";
+* {
+	background: #212121;
+	foreground: #B0BEC5;
+
+	black: #000000;
+	red: #F07178;
+	green: #C3E88D;
+	yellow: #FFCB6B;
+	blue: #82AAFF;
+	magenta: #a36ac7;
+	cyan: #89DDFF;
+	white: #EEFFFF;
+
+	background-color: @background;
 }
 
 window {
-	font: "JetBrains Mono, 12";
+	font: "0xProto Nerd Font, 12";
+
+	border-color: @foreground;
+	width: 900px;
+	height: 800px;
+
+	children: [ horibox ];
 }
 
-element {
+entry {
+	placeholder: "...";
+}
+
+horibox {
 	orientation: horizontal;
-	children: [ element-text ];
-	spacing: 5px;
+	children: [splash, mainbox];
 }
 
-element-icon {
-	size: 1.5em;
+prompt {
+	text-color: @red;
+}
+
+listview {
+	border: 0;
+}
+
+splash {
+	background-image: url("~/.dotfiles/rofi/splash.jpg", height);
+}
+
+element { 
+	padding: 0;
 }
 
 element-text {
-	vertical-align: 0.5;
+	padding: 6;
+}
+
+element-text selected {
+	text-color: @black;
+	background-color: @yellow;
+}
+
+element-text alternate {
+	background-color: @background;
+}
+
+element-icon alternate {
+	background-color: @background;
+}
+
+scrollbar {
+	handle-color: @blue;
 }
