@@ -17,4 +17,9 @@ return {
     -- Tree
     "preservim/nerdtree",
     "ryanoasis/vim-devicons",
+    "nvim-tree/nvim-web-devicons",
+
+    -- Theme
+    "marko-cerovac/material.nvim",
+    "nvim-lualine/lualine.nvim",
 }

@@ -2,6 +2,7 @@
 vim.o.title = true
 vim.o.number = true
 vim.o.autoindent = true
+vim.o.termguicolors = true
 
 local nerdtree = vim.api.nvim_create_augroup("nerdtree", {})
 vim.api.nvim_create_autocmd("VimEnter", {
@@ -58,3 +59,8 @@ cmp.setup({
       { name = 'buffer' },
     })
   })
+
+require("lualine").setup()
+
+vim.g.material_style = "darker"
+vim.cmd "colorscheme material"

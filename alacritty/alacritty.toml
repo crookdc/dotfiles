@@ -9,18 +9,18 @@ bold_italic.family = "0xProto Nerd Font"
 size = 14.0
 
 [colors.primary]
-background = '#1d1f21'
-foreground = '#c5c8c6'
+background = '#212121'
+foreground = '#B0BEC5'
 
 [colors.normal]
-black   = '#1d1f21'
-red     = '#cc342b'
-green   = '#198844'
-yellow  = '#fba922'
-blue    = '#3971ed'
+black   = '#000000'
+red     = '#F07178'
+green   = '#C3E88D'
+yellow  = '#FFCB6B'
+blue    = '#82AAFF'
 magenta = '#a36ac7'
-cyan    = '#3971ed'
-white   = '#c5c8c6'
+cyan    = '#89DDFF'
+white   = '#EEFFFF'
 
 [colors.bright]
 black   = '#969896'
