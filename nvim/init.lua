@@ -1,8 +1,13 @@
 -- VIM setup
-vim.o.synmaxcol = 30
 vim.o.title = true
 vim.o.number = true
 vim.o.autoindent = true
+
+local nerdtree = vim.api.nvim_create_augroup("nerdtree", {})
+vim.api.nvim_create_autocmd("VimEnter", {
+	group = augroup,
+	command = "NERDTree | wincmd p",
+})
 
 -- Plugins 
 require("config.lazy")
