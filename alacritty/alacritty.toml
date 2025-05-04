@@ -6,7 +6,7 @@ normal.family = "0xProto Nerd Font"
 bold.family = "0xProto Nerd Font"
 italic.family = "0xProto Nerd Font"
 bold_italic.family = "0xProto Nerd Font"
-size = 14.0
+size = 12.0
 
 [colors.primary]
 background = '#212121'

@@ -13,13 +13,14 @@ return {
     "hrsh7th/cmp-cmdline",
     "hrsh7th/cmp-vsnip",
     "hrsh7th/vim-vsnip",
-
-    -- Tree
-    "preservim/nerdtree",
-    "ryanoasis/vim-devicons",
-    "nvim-tree/nvim-web-devicons",
+    "rafamadriz/friendly-snippets",
 
     -- Theme
     "marko-cerovac/material.nvim",
     "nvim-lualine/lualine.nvim",
+
+    -- Tree
+    "preservim/nerdtree",
+    "nvim-telescope/telescope.nvim", 
+    dependencies = { "nvim-lua/plenary.nvim" }
 }
