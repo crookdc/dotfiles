@@ -50,8 +50,8 @@ cmp.setup({
   require("lualine").setup()
 
   local builtin = require('telescope.builtin')
-  vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-  vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+  vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
+  vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'Telescope buffers' })
   vim.cmd "nmap <leader>d :NERDTreeToggle<CR> | wincmd p"
 
   vim.g.material_style = "darker"

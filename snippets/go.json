@@ -1,7 +1,7 @@
 {
-	"handle error": {
+	"handler error": {
 		"prefix": "iferr",
-		"body": "if err != nil {\n\t$0\}\n",
-		"description": "Snippet for handling a predeclared error",
+		"body": "if err != nil {\n\t$0\n}",
+		"description": "Snippet for adding error handling to a predeclared error"
 	}
 }
