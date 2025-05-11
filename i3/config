@@ -181,8 +181,9 @@ gaps inner 4
 
 for_window [class="^.*"] border pixel 0
 
+exec export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/snapd/desktop/applications/" 
+
 exec polybar
-exec xrandr --output HDMI-0 --off --output DP-0 --off --output DP-1 --off --output DP-2 --mode 1920x1080 --pos 0x0 --rotate right --output DP-3 --off --output DP-4 --mode 1920x1080 --pos 1080x420 --rotate normal --output DP-5 --off
-exec feh --randomize --bg-fill ~/.dotfiles/i3/wallpaper
+exec feh --randomize --bg-fill ~/.dotfiles/i3/wallpaper/euro.jpg
 exec autotiling
 exec i3-config-wizard

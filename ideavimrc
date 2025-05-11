@@ -1,0 +1,6 @@
+Plug 'preservim/nerdtree'
+
+let mapleader = " "
+
+nmap <leader>tr :NERDTreeToggle <CR>
+nmap <leader>gd :action GotoImplementation <CR>

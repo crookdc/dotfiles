@@ -7,3 +7,4 @@ sync:
 	cp -rsf ~/.dotfiles/nvim/ ~/.config/
 	cp -u ~/.dotfiles/snippets/*.json ~/.vsnip/
 	cp -u zshrc ~/.zshrc
+	cp -u ideavimrc ~/.ideavimrc
